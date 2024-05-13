@@ -32,35 +32,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="45dp" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_margin="10dp"
-                    android:layout_weight="1"
-                    android:maxWidth="50dp"
-                    android:minWidth="50dp"
-                    app:srcCompat="@mipmap/user_icon_foreground" />
-                <EditText
-                    android:id="@+id/inputUserName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:hint="username"
-                    android:inputType="text"
-                    android:paddingLeft="8dp"
-                    android:textColor="#ffffff"
-                    android:textColorHint="#636773"
-                    android:textSize="24sp" />
-            </LinearLayout>
-
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="#7d808f" />
+
             <EditText
                 android:id="@+id/inputFirstName"
                 android:layout_width="wrap_content"
@@ -155,6 +131,33 @@
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="45dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:maxWidth="50dp"
+                    android:minWidth="50dp"
+                    app:srcCompat="@mipmap/user_icon_foreground" />
+
+                <EditText
+                    android:id="@+id/inputUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="username"
+                    android:inputType="text"
+                    android:paddingLeft="8dp"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#636773"
+                    android:textSize="24sp" />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
