@@ -19,14 +19,14 @@ public class UserManager {
         this.context = context;
     }
 
-    public void registerUser(User user) {
+    public void registerUser(AccountEntity accountEntity) {
         JSONObject userObject = new JSONObject();
         try {
-            userObject.put("firstName", user.getFirstName());
-            userObject.put("lastName", user.getLastName());
-            userObject.put("email", user.getEmail());
-            userObject.put("phone", user.getPhone());
-            userObject.put("password", user.getPassword());
+            userObject.put("firstName", accountEntity.getFirstName());
+            userObject.put("lastName", accountEntity.getLastName());
+            userObject.put("email", accountEntity.getEmail());
+            userObject.put("phone", accountEntity.getPhone());
+            userObject.put("password", accountEntity.getPassword());
 
             String userData = userObject.toString();
             FileOutputStream outputStream = context.openFileOutput(FILE_NAME, Context.MODE_PRIVATE | Context.MODE_APPEND);

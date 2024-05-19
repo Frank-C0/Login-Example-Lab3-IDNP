@@ -1,19 +1,30 @@
 package com.frank_c_dev.myapplication;
 
+import java.io.Serializable;
+
 public class AccountEntity {
-    private String FirstName;
+    private String firstName;
     private String lastName;
     private String email;
     private String phone;
     private String username;
     private String password;
 
+    public AccountEntity(String firstName, String lastName, String email, String phone, String username, String password) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.phone = phone;
+        this.username = username;
+        this.password = password;
+    }
+
     public String getFirstName() {
-        return FirstName;
+        return firstName;
     }
 
     public void setFirstName(String firstName) {
-        FirstName = firstName;
+        this.firstName = firstName;
     }
 
     public String getLastName() {
@@ -54,5 +65,9 @@ public class AccountEntity {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getFullName() {
+        return firstName + " " + lastName;
     }
 }
